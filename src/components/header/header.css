@@ -1,0 +1,27 @@
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 1rem;
+  box-shadow: 0px 3px 5px 1px #E6E6E6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.chat-header div {
+  display: flex;
+  align-items: center; }
+
+.chat-header div h1 {
+  margin-left: .25rem;
+  color: black;
+  font-size: .93rem;
+  font-weight: 600; }
+
+.chat-header div img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%; }
+
+.chat-header span {
+  cursor: pointer; }

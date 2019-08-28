@@ -1,0 +1,12 @@
+.text-box {
+  margin: 5px 0; }
+
+.text-box div {
+  display: inline-block;
+  border-radius: 33rem;
+  padding: .6rem;
+  font-size: .9rem;
+  width: auto !important; }
+
+.sender {
+  text-align: right; }
