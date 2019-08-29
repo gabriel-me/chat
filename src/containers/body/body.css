@@ -2,3 +2,7 @@
   height: 14rem;
   padding: 0 1rem;
   overflow: auto; }
+
+@media (max-width: 800px) {
+  .chat-body {
+    height: calc(100% - 6rem) } }
