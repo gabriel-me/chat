@@ -1,5 +1,6 @@
 .text-box {
-  margin: 5px 0; }
+  margin: 5px 0; 
+  word-break: break-all; }
 
 .text-box div {
   display: inline-block;
