@@ -1,6 +1,6 @@
 import React from 'react'
-import InputText from '../../containers/input/InputText'
-import Button from '../../containers/button/Button'
+import InputText from '../utils/input/InputText'
+import Button from '../utils/button/Button'
 import './footer.css'
 
 export default () => 

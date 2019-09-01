@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import TextBox from '../../components/utils/TextBox'
+import TextBox from '../utils/textbox/TextBox'
 import './body.css'
 
 const Body = props => {

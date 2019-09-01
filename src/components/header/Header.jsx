@@ -1,5 +1,5 @@
 import React from 'react'
-import { Close } from '../icons/Close'
+import { Close } from '../utils/icons/Close'
 import './header.css'
 
 export default props => 

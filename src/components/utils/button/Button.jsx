@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { sendMessage } from './actionButton'
-import { Send } from '../../components/icons/Send' 
+import { Send } from '../icons/Send' 
 import './button.css'
 
 const Button = props =>

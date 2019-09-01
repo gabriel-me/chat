@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import Chat from './components/chat/Chat'
-import bodyReducer from './containers/body/bodyReducer'
+import Reducers from './reducers'
 
 const reducers = combineReducers({
-  messages: bodyReducer
+  messages: Reducers
 })
 
 ReactDOM.render(
