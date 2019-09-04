@@ -1,21 +1,29 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import io from 'socket.io-client'
+import { currentMessages } from './actionMessages'
 import Messages from '../../components/messages/Messages'
 
+let justOne = true
+
 const MessagesContainer = props => {
-
-  const getMessages = () => {
-    const messages = props.allMessages.texts
-    return [...messages]
+  if (justOne) {
+    justOne = false
+    const URL_API = 'http://localhost:8082'
+    const socket = io(URL_API)
+    socket.on('previousMessages', messages => {
+      props.currentMessages(messages)
+    })
   }
-
-  return (
-    <Messages messages={getMessages()} />
-  )
+  
+  return <Messages messages={[...props.allMessages.texts]} />
 }
 
-const mapStateToProps = state => ({
-  allMessages: state.messages
-})
+const mapStateToProps = state => 
+  ({ allMessages: state.messages })
 
-export default connect(mapStateToProps)(MessagesContainer)
+const mapDispatchToProps = dispatch => 
+  bindActionCreators({ currentMessages }, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(MessagesContainer)

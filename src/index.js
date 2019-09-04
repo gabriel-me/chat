@@ -4,6 +4,9 @@ import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import Chat from './components/chat/Chat'
 import Reducers from './reducers'
+import generateID from './utils/generateID'
+
+window.localStorage.setItem('id', generateID())
 
 const reducers = combineReducers({
   messages: Reducers

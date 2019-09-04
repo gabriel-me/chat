@@ -4,9 +4,11 @@ import Messages from '../../containers/messages/Messages'
 import Footer from '../footer/Footer'
 import './chat.css'
 
+const user = window.localStorage.getItem('id')
+
 export default () => 
   <div className="chat">
-    <Header name="Gabriel Marques" />
+    <Header name={user} />
     <Messages />
     <Footer />
   </div>
