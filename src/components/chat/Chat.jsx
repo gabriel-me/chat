@@ -8,7 +8,7 @@ const user = window.localStorage.getItem('id')
 
 export default () => 
   <div className="chat">
-    <Header name={user} />
+    <Header name={user} src="profile.png"/>
     <Messages />
     <Footer />
   </div>
