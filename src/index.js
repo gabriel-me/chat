@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
-import Chat from './components/chat/Chat'
+import Chat from './containers/chat/Chat'
 import Reducers from './reducers'
 import generateID from './utils/generateID'
 
