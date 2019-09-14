@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
-import Chat from './containers/chat/Chat'
+import Routes from './Routes'
 import Reducers from './reducers'
 import generateID from './utils/generateID'
 
@@ -14,7 +14,7 @@ const reducers = combineReducers({
 
 ReactDOM.render(
   <Provider store={createStore(reducers)}>
-    <Chat />
+    <Routes />
   </Provider>, 
   document.getElementById('root')
 )
