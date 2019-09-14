@@ -8,9 +8,9 @@ export default props =>
       <TextBox
         key={i}
         text={message.message}
-        type={(message.author !== props.user) ? '' : 'sender'}
-        bgColor={(message.author !== props.user) ? '' : '#0080FF'}
-        color={(message.author !== props.user) ? '' : '#FFFFFF'}
+        type={(message.author !== props.username) ? '' : 'sender'}
+        bgColor={(message.author !== props.username) ? '' : '#0080FF'}
+        color={(message.author !== props.username) ? '' : '#FFFFFF'}
       />
     )}
   </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Close } from '../utils/icons/Close'
 import './header.css'
 
@@ -8,5 +9,5 @@ export default props =>
       {props.src ? <img src={props.src} alt="People profile" /> : ''}
       <h1>{props.name}</h1>
     </div>
-    <span><Close /></span>
+    <Link to="/"><span><Close /></span></Link>
   </header>

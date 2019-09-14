@@ -1,0 +1,88 @@
+/* Placeholder
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.signin ::-webkit-input-placeholder { color: #FFFFFF; }
+.signin :-moz-placeholder { color: #FFFFFF; }
+.signin ::-moz-placeholder { color: #FFFFFF; }
+.signin :-ms-input-placeholder { color: #FFFFFF; }
+
+/* Form
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.signin, .signin main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.signin {
+  min-height: 100vh;
+  width: 100%; 
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+
+.signin main header,
+.signin main input,
+.signin main button {
+  margin: 1.3rem 0;
+  text-align: center; }
+
+.signin main h1,
+.signin main h2 {
+  color: white;
+  font-weight: bold; }
+
+.signin main h1 {
+  font-size: 2.5rem; }
+
+.signin main h2 {
+  font-size: 1.2rem; }
+
+/* Input and Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.signin input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  width: 20rem;
+  padding: 1rem 0;
+  outline: none;
+  color: #FFFFFF;
+  transition: .3s; }
+
+.signin input:hover, 
+.signin input:focus {
+  width: 23rem; }
+
+.signin button {
+  background: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 2rem;
+  padding: 1rem;
+  outline: none;
+  color: #FFFFFF;
+  width: 12rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s; }
+
+.signin button:hover {
+  width: 15rem;
+  background-color: #FFFFFF;
+  color: #000000; }
+
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 800px) 
+{
+  .signin main {
+    margin: 4%; }
+
+  .signin input, 
+  .signin button {
+    width: 100%; }
+
+  .signin input:hover,
+  .signin input:focus {
+    width: 100%; }
+
+  .signin button:hover {
+    width: 100%; }
+}

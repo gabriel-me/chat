@@ -4,9 +4,9 @@ import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import Routes from './Routes'
 import Reducers from './reducers'
-import generateID from './utils/generateID'
+import validation from './utils/validation'
 
-window.localStorage.setItem('id', generateID())
+validation()
 
 const reducers = combineReducers({
   messages: Reducers

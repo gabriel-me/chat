@@ -5,7 +5,7 @@ import io from 'socket.io-client'
 import { currentMessages } from './actionMessages'
 import Messages from '../../components/messages/Messages'
 
-const user = window.localStorage.getItem('id')
+const username = window.localStorage.getItem('username')
 let justOne = true
 
 const MessagesContainer = props => {
@@ -18,7 +18,7 @@ const MessagesContainer = props => {
     })
   }
   
-  return <Messages user={user} messages={[...props.allMessages.texts]} />
+  return <Messages username={username} messages={[...props.allMessages.texts]} />
 }
 
 const mapStateToProps = state => 

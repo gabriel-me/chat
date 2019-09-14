@@ -4,14 +4,14 @@ import { bindActionCreators } from 'redux'
 import { sendMessage } from './actionButton'
 import Chat from '../../components/chat/Chat'
 
-const user = window.localStorage.getItem('id')
+const username = window.localStorage.getItem('username')
 
 const ChatContainer = props => {
   const onSubmit = event => {
     event.preventDefault()
     props.sendMessage(document.querySelector('input').value)
   }
-  return <Chat submit={onSubmit} user={user} />
+  return <Chat submit={onSubmit} user={username} />
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators(
