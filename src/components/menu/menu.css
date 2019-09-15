@@ -1,0 +1,24 @@
+.menu {
+  background-color: #0A0A2A;
+  height: 100vh;
+  width: 18rem;
+  overflow: auto; }
+
+.menu h1 {
+  font-size: 1.1rem;
+  color: #BDBDBD; }
+
+.menu header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem .5rem; }
+
+.menu section header {
+  padding-bottom: .5rem; }
+
+.menu section ul li {
+  padding: .25rem .5rem; }
+
+.menu section ul li:hover {
+  background-color: #0B0B3B; }
