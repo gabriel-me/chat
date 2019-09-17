@@ -9,7 +9,7 @@ export default props =>
   <form onSubmit={props.submit} className="chat">
     <Menu />
     <div className="content">
-      <Header name={props.user} src="profile.png" />
+      <Header username={props.user} src="profile.png" />
       <Messages />
       <Footer />
     </div>
