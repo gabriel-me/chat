@@ -1,6 +1,13 @@
-.chat {
-  display: flex; }
+.chat { display: flex; }
 
 .content {
-  width: calc(100% - 18rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 16rem);
   height: 100vh; }
+
+@media (max-width: 800px) 
+{
+  .content { width: 100%; }
+}

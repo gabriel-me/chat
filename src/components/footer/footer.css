@@ -2,5 +2,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3rem;
-  border-top: 1px solid #E6E6E6; }
+  height: 3.5rem;
+  border: 1px solid #E6E6E6;
+  border-radius: 4rem;
+  width: calc(100% - 2rem); }
+
+footer input {
+  width: 100% !important;
+  border-radius: 4rem; }

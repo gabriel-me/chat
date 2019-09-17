@@ -4,7 +4,7 @@
 
 .text-box div {
   display: inline-block;
-  border-radius: 33rem;
+  border-radius: 1rem;
   padding: .6rem;
   font-size: .9rem;
   width: auto !important; }

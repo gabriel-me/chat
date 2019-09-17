@@ -5,6 +5,7 @@
   padding: 1rem;
   outline: none; }
 
-@media (max-width: 800px) {
-  .input-text {
-    width: 100%; } }
+@media (max-width: 800px) 
+{
+  .input-text { width: 100%; } 
+}

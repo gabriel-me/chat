@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Close } from '../utils/icons/Close'
+import { Annexe } from '../utils/icons/Annexe'
 import './header.css'
 
 export default props => 
   <header className="chat-header">
+    <h1>Logado como: <span>{props.username}</span></h1>
     <div>
-      {props.src ? <img src={props.src} alt="People profile" /> : ''}
-      <h1>{props.name}</h1>
+      <span><Annexe /></span>
+      <Link to="/"><span><Close color="#DF013A"/></span></Link>
     </div>
-    <Link to="/"><span><Close /></span></Link>
   </header>
