@@ -9,7 +9,16 @@ const username = window.localStorage.getItem('username')
 const ChatContainer = props => {
   const onSubmit = event => {
     event.preventDefault()
-    props.sendMessage(document.querySelector('input').value)
+
+    const $inputMessage = document.querySelector('input')
+    const message = $inputMessage.value
+    const messageLength = message.length
+
+    const spaceKeyboard = [...message].filter(i => i === ' ')
+    const spaceLength = spaceKeyboard.length;
+
+    if (messageLength !== spaceLength)
+      props.sendMessage(message)
   }
   return <Chat submit={onSubmit} user={username} />
 }
