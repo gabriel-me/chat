@@ -11,7 +11,7 @@ const InputText = props => {
   resetValue()
 
   return (
-    <input className="input-text" placeholder="Digite sua mensagem..." />
+    <input className="input-text" placeholder="Digite sua mensagem..." required />
   )
 }
 
