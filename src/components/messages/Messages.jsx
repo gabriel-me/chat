@@ -7,6 +7,7 @@ export default props =>
     {props.messages.map((message, i) =>
       <TextBox
         key={i}
+        author={message.author}
         text={message.message}
         type={(message.author !== props.username) ? '' : 'sender'}
         bgColor={(message.author !== props.username) ? '' : '#0080FF'}

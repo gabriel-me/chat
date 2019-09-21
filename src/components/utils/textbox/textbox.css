@@ -9,5 +9,8 @@
   font-size: .9rem;
   width: auto !important; }
 
+.text-box div h1 {
+  font-weight: bold; }
+
 .sender {
   text-align: right; }
