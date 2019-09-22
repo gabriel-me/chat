@@ -12,6 +12,7 @@ export default props =>
         type={(message.author !== props.username) ? '' : 'sender'}
         bgColor={(message.author !== props.username) ? '' : '#0080FF'}
         color={(message.author !== props.username) ? '' : '#FFFFFF'}
+        userColor={message.color}
       />
     )}
   </div>

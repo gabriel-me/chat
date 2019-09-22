@@ -6,7 +6,7 @@ export default props =>
     <main>
       <header>
         <h1>Random Chat</h1>
-        <h2>Escolha um apelido para começar a conversar</h2>
+        <h2>Escolha um apelido para começar</h2>
       </header>
       <input 
         type="text" 

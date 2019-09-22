@@ -7,7 +7,12 @@ export default props =>
       backgroundColor: props.bgColor || '#FAFAFA',
       color: props.color || '#000000' 
     }}>
-      {props.type !== 'sender' ? <h1>@{props.author || ''}</h1> : ''}
+      {props.type !== 'sender' 
+        ? <h1 style={{color: props.userColor || '#000000'}}>
+            @{props.author || ''}
+          </h1> 
+        : ''
+      }
       {props.text || ''}
     </div>
   </section>

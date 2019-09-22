@@ -14,7 +14,7 @@ export default props =>
       <ul>
         {props.users 
           ? props.users.map((user, i) => 
-            <Li key={i} text={user} color="#BDBDBD" />) 
+            <Li key={i} text={user.author} color="#BDBDBD" backgroundColor={user.color} />) 
           : ''
         }
       </ul>
