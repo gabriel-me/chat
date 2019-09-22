@@ -1,14 +1,19 @@
 .menu {
-  background-color: #070719;
+  background-color: #080A0E;
   height: 100vh;
   width: 16rem;
   overflow: auto; }
 
-.menu h1 { color: #BDBDBD; }
+.menu h1 { color: #D8D8D8; }
 
 .menu header { padding: 1rem .5rem; }
 
-.menu section header { padding-bottom: .5rem; }
+.menu section header { 
+  display: flex;
+  align-items: center;
+  padding-bottom: .5rem;  }
+
+.menu section header h1 { margin-left: 5px; }
 
 .menu section ul li { padding: .25rem .5rem; }
 
@@ -18,15 +23,14 @@
   padding: .5rem 2rem;
   border-radius: 2rem;
   color: #FFFFFF;
-  border: 1.5px solid #0A0A2A;
   font-weight: bold;
-  color: #964ba2;
+  color: #D8D8D8;
   width: 100%;
   text-align: center;
   font-size: 1.1rem; }
 
 #logo h1 span {
-  color: #367eea;
+  color: #D8D8D8;
   font-weight: bold; }
 
 @media (max-width: 800px) 

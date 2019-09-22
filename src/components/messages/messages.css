@@ -7,6 +7,5 @@
 @media (max-width: 800px) 
 {
   .chat-messages { 
-    height: calc(100% - 6rem);
     padding: 1.5rem; } 
 }

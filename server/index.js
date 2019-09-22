@@ -4,7 +4,7 @@ const server = require('http').createServer(app)
 const io = require('socket.io')(server)
 
 const messages = []
-const users = []
+let users = []
 
 const addColor = () => {
   const colors = ['#FF0040', '#0040FF', '#00FF80', '#B4B102', '#000000', '#FF00FF']
@@ -14,8 +14,19 @@ const addColor = () => {
 
 const addUser = newUser => {
   const filter = users.filter(user => user.author === newUser.author)
-  if (filter.length === 0)
+  if (filter.length === 0) {
+    newUser.total = 1
     users.push(newUser)
+  } else {
+    const userTot = filter[0]
+    const newUsers = users.map(user => {
+      if (user.author === userTot.author) {
+        user.total += 1
+      }
+      return user
+    })
+    users = newUsers
+  }
 }
 
 const getUserColor = author => {

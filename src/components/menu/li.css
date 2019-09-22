@@ -9,7 +9,11 @@
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
-  font-size: 1rem;
   margin-right: .3rem;
   border-radius: 3px;
   color: #FFFFFF; }
+
+.li .total {
+  background: none;
+  color: #00FF80;
+  font-size: 1.1rem; }

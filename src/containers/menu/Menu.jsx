@@ -7,6 +7,13 @@ import Menu from '../../components/menu/Menu'
 
 let justOne = true
 
+const sortUsers = (users) => {
+  const topUsers = [...users].sort((a, b) =>
+    a.total > b.total ? -1 : a.total < b.total ? 1 : 0)
+  const top5Users = topUsers.filter((user, i) => i < 5)
+  return top5Users
+}
+
 const MenuContainer = props => {
   if (justOne) {
     justOne = false
@@ -16,8 +23,10 @@ const MenuContainer = props => {
       props.currentUsers(users)
     })
   }
+
+  const topUsers = sortUsers(props.allUsers.users)
   
-  return <Menu users={props.allUsers.users} />
+  return <Menu users={props.allUsers.users} topUsers={topUsers} />
 }
 
 const mapStateToProps = state => 
