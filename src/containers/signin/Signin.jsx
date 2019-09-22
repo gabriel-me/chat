@@ -1,9 +1,9 @@
 import React from 'react'
 import SignIn from '../../components/signin/Signin'
 
-const signIn = (e) => {
+const signInValidation = e => {
   e.preventDefault()
-  
+
   const $username = document.querySelector('form main input')
 
   if ($username.value !== '') {
@@ -14,4 +14,5 @@ const signIn = (e) => {
   }
 }
 
-export default () => <SignIn submit={signIn} />
+export default () => 
+  <SignIn submit={signInValidation} />

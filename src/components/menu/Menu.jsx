@@ -9,24 +9,12 @@ export default props =>
     </header>
     <section>
       <header>
-        <h1>Usuários Cadastrados</h1>
+        <h1>Usuários</h1>
       </header>
       <ul>
         {props.users 
           ? props.users.map((user, i) => 
-            <Li key={i} text={user.name} backgroundColor={user.color} color="#BDBDBD" />) 
-          : ''
-        }
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h1>Online Agora</h1>
-      </header>
-      <ul>
-        {props.users
-          ? props.users.map((user, i) =>
-            <Li key={i} text={user.name} backgroundColor={user.color} color="#BDBDBD" />)
+            <Li key={i} text={user} color="#BDBDBD" />) 
           : ''
         }
       </ul>
